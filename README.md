@@ -1,1 +1,4 @@
-# shop-react-redux
+# Shop 
+- react
+- redux
+- ts
