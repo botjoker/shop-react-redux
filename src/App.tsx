@@ -1,12 +1,25 @@
 import React from 'react';
 import './App.css';
+import { Layout, Breadcrumb } from 'antd';
+import { HeaderPanel } from './components/HeaderPanel';
+import { FooterPanel } from './components/FooterPanel';
+const { Content } = Layout;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+    <Layout>
+      <HeaderPanel />
+      <Content style={{ padding: '0 50px', marginTop: 64 }}>
+        <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>List</Breadcrumb.Item>
+          <Breadcrumb.Item>App</Breadcrumb.Item>
+        </Breadcrumb>
+        <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>Content</div>
+      </Content>
+      <FooterPanel />
+    </Layout>
   );
 }
 

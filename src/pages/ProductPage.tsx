@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 
-export const Header: FC = () => {
+export const ProductPage: FC = () => {
     return (
         <div>
-            Header
+            Product page
         </div>
     )
 }
