@@ -1,4 +1,0 @@
-# Shop 
-- react
-- redux
-- ts
