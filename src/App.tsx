@@ -3,6 +3,7 @@ import './App.css';
 import { Layout, Breadcrumb } from 'antd';
 import { HeaderPanel } from './components/HeaderPanel';
 import { FooterPanel } from './components/FooterPanel';
+import AppRouter from './components/AppRouter';
 const { Content } = Layout;
 
 
@@ -16,7 +17,9 @@ function App() {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
-        <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>Content</div>
+        <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
+          <AppRouter/>
+        </div>
       </Content>
       <FooterPanel />
     </Layout>

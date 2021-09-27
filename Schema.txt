@@ -5,6 +5,7 @@
     + Недавно показываемые
     + Акция
 -- Каталог
+-- Категория
 -- Товар
 -- Корзина
 -- Оформление заказа
@@ -48,3 +49,13 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
             .then(json=>console.log(json))            
 
 
+interface IUser {
+     id: number;
+     name: string;
+ }
+
+
+ let employee: IUser = {
+     id: 1, 
+     name: "Tom"
+ }
